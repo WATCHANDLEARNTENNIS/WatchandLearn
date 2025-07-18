@@ -1,16 +1,70 @@
-   <title>Watch & Learn</title>
-  </head>
-  <body style="font-family: Arial, sans-serif; text-align: center; padding: 20px;">
-    <h1>Welcome to Watch & Learn</h1>
-    <h2 style="color: #2c3e50;">Tadevos Mirijanyan, CEO</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch & Learn</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f6f9;
+      color: #2c3e50;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-    <h3>Federer Serve</h3>
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/x6ZbaU8U03w" frameborder="0" allowfullscreen></iframe>
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
 
-    <h3>Sinner Backhand</h3>
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/qZqtRSPkA1g" frameborder="0" allowfullscreen></iframe>
+    h2 {
+      font-size: 20px;
+      color: #2980b9;
+      margin-top: 0;
+    }
 
-    <h3>Nadal Patterns</h3>
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/FpU6ecDU3r0" frameborder="0" allowfullscreen></iframe>
-  </body>
-</html>t
+    h3 {
+      font-size: 22px;
+      margin: 40px 0 10px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Watch & Learn</h1>
+  <h2>Tadevos Mirijanyan, CEO</h2>
+
+  <h3>Federer Serve</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/x6ZbaU8U03w" allowfullscreen></iframe>
+  </div>
+
+  <h3>Sinner Backhand</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/qZqtRSPkA1g" allowfullscreen></iframe>
+  </div>
+
+  <h3>Nadal Patterns</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/FpU6ecDU3r0" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
